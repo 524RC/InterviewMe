@@ -79,6 +79,7 @@ body, html {
   color: white;
 }
 .titleBox1{
+  border-radius: 50px 50px 50px 50px;
   margin-top: 40px;
   margin-left: 40px;
   background-color:#99DFAF;
@@ -86,6 +87,7 @@ body, html {
   width:1000px;
 }
 .titleBox2{
+  border-radius: 50px 50px 50px 50px;
   margin-top: 40px;
   margin-left: 40px;
   background-color:#0CB1E9;
@@ -93,6 +95,7 @@ body, html {
   width:1000px;
 }
 .aboutTitle{
+  
   Color:white;
   font-size: 60px;
 }
@@ -102,21 +105,30 @@ body, html {
 }
 .aboutImage{
   width:1000px;
-  height:800px;
+  height:900px;
   padding-top: 50px;
   padding-left: 70px;
+  padding-right:300px;
 }
 .About{
+  border-radius: 50px 50px 50px 50px;
   padding-top:100px;
-  margin-top:150px;
-  width: 1000px;
-  height:800px;
+  margin-top:50px;
+  width: 850px;
+  height:850px;
   background-color:#0CB1E9;
 }
 .aboutText{
-  font-size:40px;
+  font-size:35px;
   font-family:Copperplate, Papyrus, fantasy;
   color:white;
+}
+.homeTitle{
+  font-family: 'Bebas Neue', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-size: 100px;
+ 
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
@@ -312,3 +324,49 @@ p {
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #0CB1E9;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #0980a8;
+  transform: translateY(4px);
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.footer{
+  background-color:black;
+}

@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,51 +19,18 @@
         <div class="container-fluid">
             <img src="IntroduceMeLogo.jpg" alt="Introduce Me Logo" style="width: 100px; height: 100px;">
             <a class="navbar-brand" style="font-size: 40px; font-family: Copperplate, Papyrus, fantasy; color: #99DFAF;"
-                href="#">Introduce Me</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <center>
-                                <a class="nav-link active"
-                                    style="font-size: 70px; font-family: Copperplate, Papyrus, fantasy; color: #0CB1E9;"
-                                    aria-current="page" href="#">Home</a>
-                            </center>
-                        </li>
-                        <li class="nav-item">
-                            <center>
-                                <a class="nav-link"
-                                    style="font-size: 70px; font-family: Copperplate, Papyrus, fantasy; color: #0CB1E9;"
-                                    href="#">About</a>
-                            </center>
-                        </li>
-                        <li class="nav-item">
-                            <center>
-                                <a class="nav-link"
-                                    style="font-size: 70px; font-family: Copperplate, Papyrus, fantasy; color: #0CB1E9;"
-                                    href="#">Introduction</a>
-                            </center>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                href="#home">Introduce Me</a>
+                <p></p>
+          
         </div>
     </nav>
 
-    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
 
-    <div class="hero-image">
+    <div class="hero-image" id="home">
         <div class="hero-text">
-            <h1>Visit Our Channel</h1>
-            <button>Click Here</button>
+            <h1 class="homeTitle">Visit Our Channel</h1>
+            <a href="https://www.youtube.com/@IntroduceMe"><button class="button">Click Me</button></a>
         </div>
     </div>
 
@@ -69,34 +40,32 @@
       <div class="col">
           <div class="titleBox1">
               <center>
-                  <p class="aboutTitle">About Us</p>
+                  <p class="aboutTitle" id="about">About Us</p>
               </center>
           </div>
       </div>
   </div>
   
   <div class="row">
-      <div class="col">
-          <img src="Filler.webp" class="aboutImage">
-      </div>
-  
-      <div class="col">
-          <div class="About">
-              <center>
-                  <p class="aboutText">Hi! We are three high school seniors who enjoy interviewing and hearing people's stories. Our objective is primarily to create more openness in society to allow people to share things they typically wouldn't with a stranger in hopes of breaking down social barriers that strangers subconsciously create toward one another. We aim to share their stories authentically, focusing on their passions, challenges, contributions, and enlightening experiences. Join us in our move toward a more interconnected society!
-                  </p>
-              </center>
-          </div>
-      </div>
+    <div class="column">
+      <img src="Filler.webp" alt="Snow" style="width:100%" class="aboutImage">
+    </div>
+    <div class="column">
+      <div class="About">
+        <center>
+        <p class="aboutText">Hi! We are three high school seniors who enjoy interviewing and hearing people's stories. Our objective is primarily to create more openness in society to allow people to share things they typically wouldn't with a stranger in hopes of breaking down social barriers that strangers subconsciously create toward one another. We aim to share their stories authentically, focusing on their passions, challenges, contributions, and enlightening experiences. Join us in our move toward a more interconnected society!
+        </p>
+    </center>
+    </div>
   </div>
-  
+  </div>
     <div class="divider"></div>
 
     <br><br>
 
     <div class="titleBox2">
         <center>
-            <h1 class="aboutTitle">Introductions</h1>
+            <h1 class="aboutTitle" id="int">Introductions</h1>
         </center>
     </div>
     <br>
@@ -166,11 +135,8 @@
     </article>
   </div>
   </div>
-  </center>
-  <footer class="footer">
-    <p>Author: Hege Refsnes</p>
-    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-  </footer>
+ <br>
+ <br>
 </body>
 
 </html>
